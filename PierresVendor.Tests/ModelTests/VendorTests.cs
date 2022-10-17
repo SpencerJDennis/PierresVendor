@@ -1,3 +1,4 @@
+using System.Reflection;
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
@@ -33,6 +34,40 @@ namespace PierresVendor.Tests
     {
       Vendor newVendor = new Vendor("Wendys", "hamburger restaurant");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
+    }
+
+    [TestMethod]
+    public void Getname_ReturnsName_String()
+    {
+      string name = "Wendys";
+      Vendor newVendor = new Vendor(name, "a hamburger restaurant");
+
+      string result = newVendor.Name;
+
+      Assert.AreEqual(name, result);
+    }
+
+    [TestMethod]
+    public void GetDesciption_ReturnsDescription_String()
+    {
+      string description = "A Hamburger Restaurant";
+      Vendor newVendor = new Vendor("Wendys", description);
+
+      string result = newVendor.Description;
+
+      Assert.AreEqual(description, result);
+    }
+
+    [TestMethod]
+    public void GetId_ReturnsVendorId_Int()
+    {
+      string name = "Wendys";
+      string description = "A hamburger restaurant";
+      Vendor newVendor = new Vendor(name, description);
+
+      int result = newVendor.Id;
+
+      Assert.AreEqual(1, result);
     }
   }
 }
