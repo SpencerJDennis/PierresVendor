@@ -105,5 +105,12 @@ namespace PierresVendor.Tests
 
       Assert.AreEqual(editedPrice, result);
     }
+
+    [TestMethod]
+    public void OrderCreator_CreatesNewOrder_Order()
+    {
+      Order newOrder = new Order("Bacon Hamburger", "11/13/2022", "Bacony Goodness", 10);
+      Assert.AreEqual(typeof(Order), newOrder.GetType());
+    }
   }
 }
