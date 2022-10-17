@@ -27,5 +27,12 @@ namespace PierresVendor.Tests
 
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void NewVendorCreation_CreatesANewVendor_Vendor()
+    {
+      Vendor newVendor = new Vendor("Wendys", "hamburger restaurant");
+      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
+    }
   }
 }
