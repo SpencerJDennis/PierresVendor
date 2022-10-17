@@ -1,0 +1,5 @@
+C:\Users\blade\Desktop\PierresVendor.solution\PierresVendor.Tests\obj\Debug\net5.0\PierresVendorOrder.Tests.csproj.AssemblyReference.cache
+C:\Users\blade\Desktop\PierresVendor.solution\PierresVendor.Tests\obj\Debug\net5.0\PierresVendorOrder.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\blade\Desktop\PierresVendor.solution\PierresVendor.Tests\obj\Debug\net5.0\PierresVendorOrder.Tests.AssemblyInfoInputs.cache
+C:\Users\blade\Desktop\PierresVendor.solution\PierresVendor.Tests\obj\Debug\net5.0\PierresVendorOrder.Tests.AssemblyInfo.cs
+C:\Users\blade\Desktop\PierresVendor.solution\PierresVendor.Tests\obj\Debug\net5.0\PierresVendorOrder.Tests.csproj.CoreCompileInputs.cache

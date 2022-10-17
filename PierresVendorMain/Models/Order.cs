@@ -6,12 +6,12 @@ namespace PierresVendorMain.Models
   {
     public string Title  { get; set; }
     public string Description { get; set; }
-    public string Price { get; set; }
-    public int Date { get; set; }
+    public int Price { get; set; }
+    public string Date { get; set; }
     public int Id { get; }
     private static List<Order> _instances = new List<Order> { };
 
-    public PierresOrder(string title, string date, string description, int price)
+    public Order(string title, string date, string description, int price)
     {
       Title = title;
       Date = date;

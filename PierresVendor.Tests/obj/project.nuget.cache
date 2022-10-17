@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JonfZiqr6p6sWJEKdPoX7bPfAxfyGRSgjRYWf8isxmbO2NotJrVEdpIzIf3rbZiouZ+f4ImWZyDiseN/MqyLjg==",
+  "dgSpecHash": "1Gq+YOHod2K7pghBMNfsJx0kimQKTjpyRql45nK14FXMZ/nw/QBK1LWPeSgH/cHUeLC92KKKywK6NFvqx9nkAg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\blade\\Desktop\\PierresVendor.solution\\PierresVendor.Tests\\PierresVendorOrder.Tests.csproj",
+  "projectFilePath": "C:\\Users\\blade\\Desktop\\PierresVendor.solution\\PierresVendor.Tests\\VendorOrder.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\blade\\.nuget\\packages\\microsoft.codecoverage\\15.9.0\\microsoft.codecoverage.15.9.0.nupkg.sha512",
     "C:\\Users\\blade\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
