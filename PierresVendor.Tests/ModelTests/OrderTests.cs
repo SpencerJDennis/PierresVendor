@@ -112,5 +112,35 @@ namespace PierresVendor.Tests
       Order newOrder = new Order("Bacon Hamburger", "11/13/2022", "Bacony Goodness", 10);
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
+
+     [TestMethod]
+    public void ReturnCurrentEmptyList_ReturnsEmptyList_OrderList()
+    {
+      List<Order> newList = new List<Order> {};
+
+      List<Order> result = Order.GetAll();
+
+      CollectionAssert.AreEqual(newList, result);
+    }
+
+    [TestMethod]
+    public void ReturnsAllOrders_ReturnsCurrentOrders_OrderList()
+    {
+      string orderTitle1 = "Bacon Hamburger";
+      string orderTitle2 = "Yucky Garbage";
+      string orderDate1 = "11/13/2022";
+      string orderDate2 = "11/14/2022";
+      string orderDescription1 = "Bacony Goodness";
+      string orderDescription2 = "Disgusting Garbage";
+      int orderPrice1 = 10;
+      int orderPrice2 = 2;
+      Order newOrder1 = new Order(orderTitle1, orderDate1, orderDescription1, orderPrice1);
+      Order newOrder2 = new Order(orderTitle2, orderDate2, orderDescription2, orderPrice2);
+      List<Order> newList = new List<Order> { newOrder1, newOrder2 };
+
+      List<Order> result = Order.GetAll();
+
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
