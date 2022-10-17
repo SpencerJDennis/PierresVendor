@@ -83,5 +83,16 @@ namespace PierresVendor.Tests
       List<Order> result = newVendor.NewOrders;
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void Find_ReturnsVendorViaId_Vendor()
+    {
+      Vendor newVendor1 = new Vendor("Scanders Sandwich Shop", "Yummy Sandwiches for sure");
+      Vendor newVendor2 = new Vendor("Wendys", "A hamburger restaurant");
+
+      Vendor result = Vendor.Find(2);
+
+      Assert.AreEqual(newVendor2, result);
+    }
   }
 }
