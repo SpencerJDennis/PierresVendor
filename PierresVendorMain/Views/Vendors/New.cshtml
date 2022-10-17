@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1>Create a new Vendor</h1>
+
+<form action="/vendors" method="post">
+  <label for="newVendorName">Vendor Name</label>
+  <input id="newVendorName" name="newVendorName" type="text">
+  <label for="newVendorDescription">Vendor Description</label>
+  <input id="newVendorDescription" name="newVendorDescription" type="text">
+  <button type="submit">Add</button>
+</form>
+
+<p><a href ="/">Back to Home Page</a></p>
+<p><a href="/vendors">Back to Vendors.</a></p>
